@@ -16,8 +16,9 @@ public class QueryProcessor {
         	int num1 = Integer.parseInt(a[8]);
         	int num2 = Integer.parseInt(a[9]);
         	
-            return num1 + num2 + "";
-            return "20106";
+            int largest = num1 < num2 ? num2 : num1;
+            
+            return largest + "";
         }
         
         if (query.toLowerCase().contains("plus")) {
