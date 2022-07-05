@@ -14,7 +14,7 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("largest")) {
             String[] a = query.split(" |,");
         	int num1 = Integer.parseInt(a[9]);
-        	int num2 = Integer.parseInt(a[10]);
+        	int num2 = Integer.parseInt(a[11]);
         	
             int largest = num1 < num2 ? num2 : num1;
             
