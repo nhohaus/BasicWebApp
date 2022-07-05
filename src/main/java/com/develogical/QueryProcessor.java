@@ -18,6 +18,14 @@ public class QueryProcessor {
         	
             int largest = num1 < num2 ? num2 : num1;
             
+            if (a.length >= 15) {
+            	int num3 = Integer.parseInt(a[13]);
+            	int num4 = Integer.parseInt(a[15]);
+            	
+            	largest = largest < num3 ? num3 : largest;
+            	largest = largest < num4 ? num4 : largest;
+            }
+            
             return largest + "";
         }
         
