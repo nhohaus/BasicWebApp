@@ -16,7 +16,11 @@ public class QueryProcessor {
         }
         
         if (query.toLowerCase().contains("plus")) {
-            return "4036";
+        	String[] a = query.split(" ");
+        	int num1 = Integer.parseInt(a[2]);
+        	int num2 = Integer.parseInt(a[4]);
+        	
+            return num1 + num2 + "";
         }
         
         return "";
