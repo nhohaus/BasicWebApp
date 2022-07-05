@@ -17,8 +17,8 @@ public class QueryProcessor {
         
         if (query.toLowerCase().contains("plus")) {
         	String[] a = query.split(" ");
-        	int num1 = Integer.parseInt(a[2]);
-        	int num2 = Integer.parseInt(a[4]);
+        	int num1 = Integer.parseInt(a[3]);
+        	int num2 = Integer.parseInt(a[5]);
         	
             return num1 + num2 + "";
         }
