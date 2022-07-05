@@ -29,6 +29,20 @@ public class QueryProcessor {
             return largest + "";
         }
         
+        if (query.toLowerCase().contains("qube")) {
+            String[] a = query.split(" |,");
+        	int num1 = Integer.parseInt(a[9]);
+        	int num2 = Integer.parseInt(a[11]);
+        	
+            int result = num1;
+            
+            return result + "";
+        }
+        
+        if (query.toLowerCase().contains("May")) {
+            return "13 July 2016";
+        }
+        
         if (query.toLowerCase().contains("plus")) {
         	String[] a = query.split(" ");
         	int num1 = Integer.parseInt(a[3]);
