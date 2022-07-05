@@ -31,8 +31,8 @@ public class QueryProcessor {
         
         if (query.toLowerCase().contains("qube")) {
             String[] a = query.split(" |,");
-        	int num1 = Integer.parseInt(a[9]);
-        	int num2 = Integer.parseInt(a[11]);
+        	int num1 = Integer.parseInt(a[13]);
+        	int num2 = Integer.parseInt(a[15]);
         	
             int result = num1;
             
